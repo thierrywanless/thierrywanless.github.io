@@ -1,0 +1,58 @@
+@import "../styles/global-variables.scss";
+
+.header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+
+  background-color: $primaryColor;
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.homeItem {
+  max-width: 100%;
+  height: auto;
+
+  letter-spacing: 0.05em;
+  color: $mainWhite;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+
+  letter-spacing: 0.05em;
+  padding: 20px;
+  color: $mainWhite;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $navSelection;
+  }
+}
+
+.active-menu-item {
+  background-color: $navSelection;
+}
