@@ -26,6 +26,12 @@ $footer-background-color: $primary;
 // Import rest of Bulma
 @import "~bulma/bulma.sass";
 
+// Import Font Awesome
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/brands";
+
 // Site styles
 
 h1,
@@ -49,4 +55,24 @@ h6 {
 
 .footer h3 {
   color: $white;
+}
+
+.is-circle {
+  border-radius: 50%;
+}
+
+.social-icons .button {
+  margin: 0.2rem;
+}
+
+.hero-header {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .title,
+  .subtitle {
+    color: $white;
+  }
 }
