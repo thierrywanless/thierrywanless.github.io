@@ -1,26 +1,35 @@
-// Universal site styles
+// Global site styles
 
+// Import initial Bulma variables
+@import "~bulma/sass/utilities/initial-variables";
+
+// Import own custom styles
 @import "./global-variables.scss";
 @import "../styles/typography.css";
 
-* {
-  box-sizing: border-box;
-}
+// Initial Bulma variables
+$orange: #f47b60;
+$orange-selection: #edb4a6;
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+$family-sans-serif: "LexendDeca Regular", "Segoe UI", Roboto, Verdana,
+  "Helvetica Neue", sans-serif;
 
-body {
-  color: $secondaryColor;
-  font-size: 100%;
-  margin: 0;
-  line-height: 1.4283;
-  font-family: "LexendDeca Regular", "Segoe UI", Roboto, Verdana,
-    "Helvetica Neue", sans-serif;
+// Derived Bulma variables
+$primary: $orange;
+
+$navbar-background-color: $primary;
+$navbar-item-color: $white;
+$navbar-item-hover-color: $white;
+$navbar-item-hover-background-color: $orange-selection;
+$footer-background-color: $primary;
+
+// Import rest of Bulma
+@import "~bulma/bulma.sass";
+
+// Site styles
+
+.navbar .navbar-menu {
+  text-align: center;
 }
 
 h1,
@@ -29,11 +38,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
-  color: $primaryColor;
+  color: $primary;
 }
 
-a {
-  color: $primaryColor;
-  text-decoration: none;
+.footer h3 {
+  color: $white;
 }

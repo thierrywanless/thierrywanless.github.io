@@ -1,12 +1,11 @@
 import React from "react";
-import footerStyles from "./footer.module.scss";
 
 /**
  * Footer component
  */
 const Footer = () => {
   return (
-    <footer className={footerStyles.siteFooter}>
+    <footer className={`footer has-text-centered`}>
       <h3>Designed &amp; coded by Thierry Wanless</h3>
     </footer>
   );

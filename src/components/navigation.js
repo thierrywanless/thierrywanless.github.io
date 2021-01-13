@@ -1,8 +1,6 @@
 import React from "react";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import navStyles from "./navigation.module.scss";
-
 /**
  * Navigation component
  */
@@ -17,7 +15,7 @@ const Navigation = () => {
     >
       <div className="container">
         <div className="navbar-brand">
-          <AnchorLink to="/" className="navbar-item" title="home">
+          <AnchorLink to="/#home" className="navbar-item" title="home">
             Thierry Wanless
           </AnchorLink>
           <a

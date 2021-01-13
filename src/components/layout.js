@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import Navigation from "./navigation";
 import Footer from "./footer";
 import "../styles/style.scss";
-import layoutStyles from "./layout.module.scss";
 
 /**
  * Shared site layout
  */
 const Layout = (props) => {
+  // Add class to body class list
+  useEffect(() => {
+    document.body.classList.add("has-navbar-fixed-top");
+    return () => {
+      document.body.classList.remove("has-navbar-fixed-top");
+    };
+  });
+
   return (
-    <div className={layoutStyles.siteContainer}>
+    <div id="home">
       <Navigation />
-      <main>{props.children}</main>
+      <div>{props.children}</div>
       <Footer />
     </div>
   );
