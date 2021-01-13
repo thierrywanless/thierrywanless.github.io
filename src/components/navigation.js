@@ -19,6 +19,7 @@ const Navigation = () => {
             Thierry Wanless
           </AnchorLink>
           <a
+            href="#/"
             className={`navbar-burger ${isActive ? "is-active" : ""}`}
             role="button"
             aria-label="menu"
