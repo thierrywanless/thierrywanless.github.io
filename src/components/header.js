@@ -41,19 +41,19 @@ const Header = () => {
             Love to Learn. Learn to Love
           </h2>
           <div className="social-icons">
-            <a href="#/" class="button is-medium is-circle is-outlined">
-              <span class="icon">
-                <i class="fab fa-linkedin-in fa-lg"></i>
+            <a href="#/" className="button is-medium is-circle is-outlined">
+              <span className="icon">
+                <i className="fab fa-linkedin-in fa-lg"></i>
               </span>
             </a>
-            <a href="#/" class="button is-medium is-circle is-outlined">
-              <span class="icon">
-                <i class="fab fa-github fa-lg"></i>
+            <a href="#/" className="button is-medium is-circle is-outlined">
+              <span className="icon">
+                <i className="fab fa-github fa-lg"></i>
               </span>
             </a>
-            <a href="#/" class="button is-medium is-circle is-outlined">
-              <span class="icon">
-                <i class="far fa-envelope fa-lg"></i>
+            <a href="#/" className="button is-medium is-circle is-outlined">
+              <span className="icon">
+                <i className="far fa-envelope fa-lg"></i>
               </span>
             </a>
           </div>

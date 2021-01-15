@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="#about" className="section is-medium has-text-centered">
+    <section id="about" className="section is-medium has-text-centered">
       <div className="container">
         <div className="columns is-centered">
           <div className="column is-three-fifths">
