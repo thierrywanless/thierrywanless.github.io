@@ -3,6 +3,7 @@ import * as React from "react";
 import About from "../components/about";
 import Header from "../components/header";
 import Layout from "../components/layout";
+import ProjectList from "../components/projectList";
 import Skills from "../components/skills";
 
 const IndexPage = () => {
@@ -11,7 +12,7 @@ const IndexPage = () => {
       <Header />
       <About />
       <Skills />
-      <h1 id="projects">Projects</h1>
+      <ProjectList />
     </Layout>
   );
 };

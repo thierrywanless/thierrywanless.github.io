@@ -17,6 +17,8 @@ $family-sans-serif: "LexendDeca Regular", "Segoe UI", Roboto, Verdana,
 // Derived Bulma variables
 $primary: $orange;
 
+$link: $primary;
+
 $navbar-background-color: $primary;
 $navbar-item-color: $white;
 $navbar-item-hover-color: $white;
@@ -30,6 +32,7 @@ $footer-background-color: $primary;
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import "@fortawesome/fontawesome-free/scss/fontawesome";
 @import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/solid";
 @import "@fortawesome/fontawesome-free/scss/brands";
 
 // Site styles
@@ -89,6 +92,18 @@ h6 {
 .skill-image {
   max-width: 100px;
   max-height: 100px;
-  width: 100px;
+  width: 100%;
   margin: auto;
+}
+
+.project-technologies {
+  color: $primary;
+}
+
+.icon-text {
+  display: flex;
+
+  .icon {
+    margin-right: 5px;
+  }
 }
