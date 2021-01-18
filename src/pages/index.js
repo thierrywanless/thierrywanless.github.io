@@ -12,7 +12,6 @@ const IndexPage = () => {
       <About />
       <Skills />
       <h1 id="projects">Projects</h1>
-      <h1 id="contact">Contact</h1>
     </Layout>
   );
 };

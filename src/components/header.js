@@ -2,6 +2,8 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
+import Social from "../components/social";
+
 /**
  * Header component
  */
@@ -40,23 +42,7 @@ const Header = () => {
           <h2 className="subtitle is-size-4-desktop">
             Love to Learn. Learn to Love
           </h2>
-          <div className="social-icons">
-            <a href="#/" className="button is-medium is-circle is-outlined">
-              <span className="icon">
-                <i className="fab fa-linkedin-in fa-lg"></i>
-              </span>
-            </a>
-            <a href="#/" className="button is-medium is-circle is-outlined">
-              <span className="icon">
-                <i className="fab fa-github fa-lg"></i>
-              </span>
-            </a>
-            <a href="#/" className="button is-medium is-circle is-outlined">
-              <span className="icon">
-                <i className="far fa-envelope fa-lg"></i>
-              </span>
-            </a>
-          </div>
+          <Social />
         </div>
       </div>
     </BackgroundImage>
