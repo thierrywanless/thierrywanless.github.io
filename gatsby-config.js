@@ -7,6 +7,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-sharp",
+    `gatsby-transformer-yaml`,
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
@@ -20,6 +21,14 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "data",
+        path: "./src/data/",
+      },
+      __key: "data",
     },
     {
       resolve: "gatsby-plugin-manifest",
