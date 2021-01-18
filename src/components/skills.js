@@ -27,7 +27,7 @@ const Skills = () => {
   const images = data.allFile.edges;
 
   return (
-    <section id="skills" className="section is-medium has-text-centered">
+    <section id="skills" className="section has-text-centered">
       <div className="container">
         <div className="columns is-centered">
           <div className="column is-three-fifths">
