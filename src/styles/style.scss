@@ -1,0 +1,108 @@
+// Global site styles
+
+// Import initial Bulma variables
+@import "~bulma/sass/utilities/initial-variables";
+
+// Import own custom styles
+@import "../styles/typography.scss";
+
+// Initial Bulma variables
+$orange: #f47b60;
+$orange-selection: #edb4a6;
+
+$family-sans-serif: "LexendDeca Regular", "Segoe UI", Roboto, Verdana,
+  "Helvetica Neue", sans-serif;
+
+// Derived Bulma variables
+$primary: $orange;
+
+$link: $primary;
+
+$navbar-background-color: $primary;
+$navbar-item-color: $white;
+$navbar-item-hover-color: $white;
+$navbar-item-hover-background-color: $orange-selection;
+$footer-background-color: $primary;
+
+// Import rest of Bulma
+@import "~bulma/bulma.sass";
+
+// Import Font Awesome
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/brands";
+
+// Site styles
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary;
+}
+
+.navbar .navbar-menu {
+  text-align: center;
+}
+
+.navbar-burger {
+  &:hover {
+    background-color: $orange-selection;
+  }
+}
+
+.footer h3 {
+  color: $white;
+}
+
+.is-circle {
+  border-radius: 50%;
+}
+
+.social-icons {
+  margin-bottom: 25px;
+
+  .button {
+    margin: 0.2rem;
+  }
+}
+
+.hero-header {
+  // Before, After must be targeted to avoid issue with <BackgroundImage /> moving background
+  &:before,
+  &:after {
+    // Apply parallax effect
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title,
+  .subtitle {
+    color: $white;
+  }
+}
+
+.skill-image {
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+  margin: auto;
+}
+
+.project-technologies {
+  color: $primary;
+}
+
+.icon-text {
+  display: flex;
+
+  .icon {
+    margin-right: 5px;
+  }
+}
