@@ -96,7 +96,7 @@ const ProjectCard = ({
           >
             <span className="icon-text">
               <span className="icon">
-                <i className="fas fa-code-branch fa-lg"></i>
+                <i className="fas fa-globe fa-lg"></i>
               </span>
               <span>Website</span>
             </span>
