@@ -11,6 +11,7 @@ import Image from "gatsby-image";
  * @param {string} description - description of the project
  * @param {string?} liveUrl - url for the live version (nullable)
  * @param {string?} sourceUrl - url for the source (nullable)
+ * @param {string?} website - url for the website (nullable)
  * @param {boolean} wip - work in progress
  */
 const ProjectCard = ({
@@ -21,6 +22,7 @@ const ProjectCard = ({
   description,
   liveUrl,
   sourceUrl,
+  website,
   wip,
 }) => {
   return (
@@ -83,6 +85,22 @@ const ProjectCard = ({
             </span>
             <span>Source private</span>
           </span>
+        )}
+
+        {website && (
+          <a
+            className="card-footer-item"
+            href={website}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="icon-text">
+              <span className="icon">
+                <i className="fas fa-code-branch fa-lg"></i>
+              </span>
+              <span>Website</span>
+            </span>
+          </a>
         )}
       </footer>
     </div>

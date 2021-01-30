@@ -7,13 +7,32 @@
 #   description: string
 #   liveUrl: string?
 #   sourceUrl: string?
+#   website: string?
 #   wip: boolean
 projects:
-  - projectTitle: "Test Title"
-    imageFilePath: "projects/test-project.jpg"
-    imageAlt: "Test image alt"
-    technologies: "Javascript, React, Node"
-    description: "Test description that is long enough but not too long for the box"
-    liveUrl: "http://www.google.com"
-    sourceUrl: "http://www.google.com"
+  # - projectTitle: "Test Title"
+  #   imageFilePath: "projects/test-project.jpg"
+  #   imageAlt: "Test image alt"
+  #   technologies: "Javascript, React, Node"
+  #   description: "Test description that is long enough but not too long for the box"
+  #   liveUrl: "http://www.google.com"
+  #   sourceUrl: "http://www.google.com"
+  #   website: "http://www.google.com"
+  #   wip: false
+  - projectTitle: "WITO"
+    imageFilePath: "projects/wito.png"
+    imageAlt: "WITO logo"
+    technologies: "Android, Kotlin, Node API, MySQL, AWS"
+    description: "A start up focused on increasing employability by developing and evidencing soft skills"
+    liveUrl: null
+    sourceUrl: null
+    website: "https://www.witoapp.co.uk"
+    wip: true
+  - projectTitle: "Pokedex"
+    imageFilePath: "projects/pokedex.png"
+    imageAlt: "Pokedex homepage"
+    technologies: "React, TailwindCSS, PokeAPI"
+    description: "React application which uses PokeAPI to request and display data of any Pokemon"
+    liveUrl: "https://thierrywanless.github.io/pokedex/"
+    sourceUrl: "https://github.com/thierrywanless/pokedex"
     wip: false

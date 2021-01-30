@@ -31,6 +31,7 @@ const ProjectList = () => {
                 description
                 liveUrl
                 sourceUrl
+                website
                 wip
               }
             }
@@ -69,6 +70,7 @@ const ProjectList = () => {
                 description={project.description}
                 liveUrl={project.liveUrl}
                 sourceUrl={project.sourceUrl}
+                website={project.website}
                 wip={project.wip}
               />
             </div>
