@@ -36,3 +36,11 @@ projects:
     liveUrl: "https://thierrywanless.github.io/pokedex/"
     sourceUrl: "https://github.com/thierrywanless/pokedex"
     wip: false
+  - projectTitle: "RSS Feed"
+    imageFilePath: "projects/rss-feed.png"
+    imageAlt: "RSS Feed homepage"
+    technologies: "React, TailwindCSS, Firebase, RSS"
+    description: "Dynamic RSS aggregator putting all your favourite sources in one place!"
+    liveUrl: "https://rss-feed-30b89.firebaseapp.com"
+    sourceUrl: "https://github.com/thierrywanless/rss-feed"
+    wip: false
